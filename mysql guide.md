@@ -227,7 +227,7 @@ sort the result-set in ascending or descending order.
 > ORDER BY keyword sorts the records in ascending order by default.
 ## GROUP BY
 GROUP BY statement groups rows that have the same values into summary rows
-```
+```bash
     SELECT column_name(s)
     FROM table_name
     WHERE condition
@@ -236,7 +236,7 @@ GROUP BY statement groups rows that have the same values into summary rows
 > Note: GROUP BY statement is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
 ## SELECT DISTINCT 
 Display only distinct (different) values.
-```
+```bash
     SELECT DISTINCT column1, 
     column2, ...
 	FROM table_name;
