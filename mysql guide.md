@@ -134,7 +134,7 @@ step by step guidence.
     SELECT * FROM table_name;	
 ```
 
-## Display specific column_name row data from table
+## Display specific column_name data from table
 ```
     SELECT column_name1, column_name2 FROM 
     table_name ;  
@@ -225,9 +225,21 @@ sort the result-set in ascending or descending order.
         column2, ... ASC|DESC;
 ```
 > ORDER BY keyword sorts the records in ascending order by default.
+## GROUP BY
+GROUP BY statement groups rows that have the same values into summary rows
+```
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    GROUP BY column_name(s)
+```
+> Note: GROUP BY statement is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
 ## SELECT DISTINCT 
 Display only distinct (different) values.
 ```
-    SELECT DISTINCT column1, column2, ...
-		FROM table_name;
+    SELECT DISTINCT column1, 
+    column2, ...
+	FROM table_name;
 ```
+
+
